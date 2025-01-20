@@ -20,5 +20,14 @@ namespace Snake
             this.x = x;
             this.y = y;
         }
+
+        public override bool Equals(object? obj)
+        {
+            if ((obj == null || !GetType().Equals(obj.GetType())))
+                return false;
+
+            Coordinates other = (Coordinates)obj;
+            return x == other.x && y == other.y;
+        }
     }
 }

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\fetva\\source\\repos\\ADEV-3009\\Snake\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D083D711-929C-497F-B30B-9963C055CEB4}|Snake.csproj|c:\\users\\fetva\\source\\repos\\adev-3009\\snake\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D083D711-929C-497F-B30B-9963C055CEB4}|Snake.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D083D711-929C-497F-B30B-9963C055CEB4}|Snake.csproj|c:\\users\\fetva\\source\\repos\\adev-3009\\snake\\coordinates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D083D711-929C-497F-B30B-9963C055CEB4}|Snake.csproj|solutionrelative:coordinates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D083D711-929C-497F-B30B-9963C055CEB4}|Snake.csproj|c:\\users\\fetva\\source\\repos\\adev-3009\\snake\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D083D711-929C-497F-B30B-9963C055CEB4}|Snake.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Coordinates.cs",
               "DocumentMoniker": "C:\\Users\\fetva\\source\\repos\\ADEV-3009\\Snake\\Coordinates.cs",
               "RelativeDocumentMoniker": "Coordinates.cs",
-              "ToolTip": "C:\\Users\\fetva\\source\\repos\\ADEV-3009\\Snake\\Coordinates.cs",
-              "RelativeToolTip": "Coordinates.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "ToolTip": "C:\\Users\\fetva\\source\\repos\\ADEV-3009\\Snake\\Coordinates.cs*",
+              "RelativeToolTip": "Coordinates.cs*",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAcwB4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T14:53:18.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\fetva\\source\\repos\\ADEV-3009\\Snake\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\fetva\\source\\repos\\ADEV-3009\\Snake\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T14:52:05.808Z",
               "EditorCaption": ""
