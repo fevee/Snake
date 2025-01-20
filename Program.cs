@@ -2,6 +2,9 @@
 
 Coordinates gridDimensions = new Coordinates(75, 25);
 Coordinates snakePosition = new Coordinates(10, 1);
+Random rand = new Random();
+Coordinates applePosition = new Coordinates(rand.Next(1, gridDimensions.X - 1), rand.Next(1, gridDimensions.Y -1));
+
 
 // Set the console window size and buffer size, leaving extra space for system messages
 Console.SetWindowSize(gridDimensions.X + 1, gridDimensions.Y + 8); 
@@ -14,12 +17,14 @@ for (int y = 0; y < gridDimensions.Y; y++)
     {
         Coordinates currentCoordinate = new Coordinates(x, y);
 
-            if (snakePosition.Equals(currentCoordinate))
-                Console.Write("■");
-            else if (x == 0 || y == 0 || x == gridDimensions.X - 1 || y == gridDimensions.Y - 1)
-                Console.Write("#");
-            else
-                Console.Write(" ");
+        if (snakePosition.Equals(currentCoordinate))
+            Console.Write("■");
+        else if (applePosition.Equals(currentCoordinate))
+            Console.Write("a");
+        else if (x == 0 || y == 0 || x == gridDimensions.X - 1 || y == gridDimensions.Y - 1)
+            Console.Write("#");
+        else
+            Console.Write(" ");
     }
     Console.WriteLine();  // Move to the next line after drawing each row
 }
