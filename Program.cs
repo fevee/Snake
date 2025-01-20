@@ -7,6 +7,9 @@ Coordinates applePosition = new Coordinates(rand.Next(1, gridDimensions.X - 1), 
 int frameDelay = 100; //Renders at 100ms per frame
 Direction movementDirection = Direction.Down;
 
+List<Coordinates> snakePositionHistory = new List<Coordinates>();
+int snakeLength = 1;
+
 // Set the console window size and buffer size, leaving extra space for system messages
 Console.SetWindowSize(gridDimensions.X + 1, gridDimensions.Y + 5); 
 Console.SetBufferSize(gridDimensions.X + 1, gridDimensions.Y + 5);  
@@ -23,7 +26,7 @@ while(true)
         {
             Coordinates currentCoordinate = new Coordinates(x, y);
 
-            if (snakePosition.Equals(currentCoordinate))
+            if (snakePosition.Equals(currentCoordinate) || snakePositionHistory.Contains(currentCoordinate))
                 Console.Write("■");
             else if (applePosition.Equals(currentCoordinate))
                 Console.Write("a");
@@ -34,6 +37,16 @@ while(true)
         }
         Console.WriteLine();  // Move to the next line after drawing each row
     }
+
+    if (snakePosition.Equals(applePosition))
+    {
+        snakeLength++;
+        applePosition = new Coordinates(rand.Next(1, gridDimensions.X - 1), rand.Next(1, gridDimensions.Y - 1));
+    }
+    snakePositionHistory.Add(new Coordinates(snakePosition.X, snakePosition.Y));
+
+    if (snakePositionHistory.Count > snakeLength)
+        snakePositionHistory.RemoveAt(0);
 
     DateTime time = DateTime.Now;
 
@@ -58,7 +71,6 @@ while(true)
                     movementDirection = Direction.Down;
                     break;
             }
-
         }
     }
 }
