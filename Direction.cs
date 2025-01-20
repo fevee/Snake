@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
+    /// <summary>
+    /// Represents the possible movement directions for the snake in the game.
+    /// </summary>
     internal enum Direction
     {
         Up,
